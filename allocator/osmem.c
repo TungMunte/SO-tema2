@@ -10,8 +10,8 @@
 #define PAGE_SIZE 4096
 #define BLOCK_SIZE ALIGN(sizeof(struct block_meta))
 
-static struct block_meta *demo = NULL;
-static int count = 0;
+struct block_meta *demo = NULL;
+int count = 0;
 
 void *os_malloc(size_t size)
 {
